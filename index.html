@@ -6,78 +6,152 @@
     <title>El camino de las bodegas</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ad5e1ff0aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-    <body>
-        <header>
-            <img src="./assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas, es un vino con una copa llena">
-            <link rel="stylesheet" href="./css/style.css">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/bodegas.html">Bodegas</a></li>
-                    <li><a href="./pages/noticias.html">Noticias</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1>Bienvenido a El camino de las bodegas</h1> <!-- Titulo principal -->
-            </section>
-            <section>
-                <p>El camino de las bodegas es un lugar para amantes del buen vino. En esta página web, podrás encontrar información sobre bodegas, noticias, y contactar con nosotros.</p>
-            </section>
-            <section>
-                <h2>🍷 Cómo degustar un buen vino como un verdadero amante del vino 🍷</h2>
-                <ol type="1" start="1">
-                        <li>Míralo con amor 👀
-                            Antes de llevarlo a la boca, admíralo. Inclina la copa sobre un fondo blanco y observa su color, brillo y densidad. ¿Es un rojo intenso como un atardecer en Mendoza? ¿Un blanco dorado como la miel de los dioses?</li>
-                        <li>Gíralo con estilo 💃🕺
-                            Haz girar suavemente la copa (sin salpicar, por favor 😆). Esto oxigena el vino y libera sus aromas. Mira las lágrimas que deja en la copa. Si son lentas y densas, es un vino con cuerpo y estructura. Si bajan rápido… bueno, igual bébelo, seguro está buenísimo.</li>
-                        <li>Huélelo con pasión 👃
-                            Acerca la nariz a la copa y respira profundo. ¿Hueles frutas, especias, madera o chocolate? (Si huele a corcho, mala suerte, abre otra botella 🤷‍♂️).</li>
-                        <li>El gran momento: el primer sorbo 😍
-                            Toma un pequeño sorbo y deja que el vino acaricie tu boca. Pásalo por toda la lengua, siente su textura y descubre sus secretos. ¿Es suave y sedoso o vibrante y potente?</li>
-                        <li>Disfruta el retrogusto 😌
-                            Después de tragar (o escupir, si eres un sommelier muy serio 🤓), siente los sabores que quedan en tu boca. ¿Dura mucho o desaparece como mensaje de ex que no quieres responder?</li>
-                        <li>Ahora sí, ya puedes hablar con propiedad en una cata y parecer un experto. Pero recuerda, lo más importante es disfrutarlo sin miedo y con buena compañía. 🍷✨
-    
-                            ¿Listo para tu próxima copa? 😉</li>
-                </ol>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-contenido">
-                <div class="footer-logo">
-                    <img src="./assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas">
-                </div>
-                
-                <nav class="footer-barra">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/bodegas.html">Bodegas</a></li>
-                        <li><a href="./pages/noticias.html">Noticias</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
+<body>
+    <header class="bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="./assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                                <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                                <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
+                                <li class="nav-item"><a href="./pages/noticias.html" class="nav-link">Noticias</a></li>
+                                <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-        
-                <div class="footer-copyright">
-                    <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/ElCaminoDeLasBodegas/">
-                            <i class="fa-brands fa-square-facebook"></i>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container py-5">
+        <section>
+            <<h1 class="text-center mb-4">Bienvenido a El camino de las bodegas</h1>
+        </section>
+        <section class="text-center mt-5">
+            <p class="lead">El camino de las bodegas es un lugar para amantes del buen vino. En esta página web, podrás encontrar información sobre bodegas, noticias, y contactar con nosotros.</p>
+                <a href="./pages/nosotros.html" class="btn btn-primary">Nosotros</a>.
+        </section>
+        <!-- Últimas Bodegas -->
+        <section class="mb-5 mt-5">
+            <h2 class="text-center mb-4">Últimas Bodegas</h2>
+            <div class="row" id="bodegaContainer">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./assets/img/Bodega1.jpg" class="card-img-top" alt="Bodega 1">
                         </a>
-                        <a href="https://www.instagram.com/elcaminodelasbodegas/">
-                            <i class="fa-brands fa-square-instagram"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Trapiche Costa & Pampa</h5>
+                            <h7>Chapadmalal - Buenos Aires</h7>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./assets/img/Bodega2.jpg" class="card-img-top" alt="Bodega 2">
                         </a>
-                        <a href="https://www.twitter.com/elcaminodelasbodegas/">
-                            <i class="fa-brands fa-square-twitter"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Bodega Lopez</h5>
+                            <h7>Maipu - Mendoza</h7>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./assets/img/Bodega3.jpg" class="card-img-top" alt="Bodega 3">
                         </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Jean Bousquet</h5>
+                            <h7>Valle de Uco - Mendoza</h7>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+        
+        <!-- Últimas Noticias -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Últimas Noticias</h2>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./assets/img/Noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h5>
+                        <p class="card-text news-summary">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
+                        <a href="#" class="btn btn-primary">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Nota 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./assets/img/Noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h5>
+                        <p class="card-text news-summary">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
+                        <a href="#" class="btn btn-primary">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Nota 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./assets/img/Noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Conversamos con Agustina Hanna enologa de Ruca Malen</h5>
+                        <p class="card-text news-summary">Agustina Hanna, nueva enóloga de Ruca Malen, quien fue elegida en busca de aportar creatividad e innovación, a partir de toda su expertise en la elaboración de vinos de alta gama.</p>
+                        <a href="#" class="btn btn-primary">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mensaje de contacto -->
+        <section class="text-center mt-5">
+            <p class="lead">Todas las bodegas que quieran ser parte de El camino de las Bodegas pueden escribirnos en el siguiente link:</p>
+                <a href="./pages/contacto.html" class="btn btn-primary">contacto</a>.
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white py-4">
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="footer-logo">
+                    <img src="./assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="./index.html" class="nav-link text-white">Inicio</a></li>
+                        <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link text-white">Nosotros</a></li>
+                        <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link text-white">Bodegas</a></li>
+                        <li class="nav-item"><a href="./pages/noticias.html" class="nav-link text-white">Noticias</a></li>
+                        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="text-center mt-3 mt-md-0">
+                    <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+

@@ -5,87 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El camino de las bodegas</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/ad5e1ff0aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+<body>
     <body>
-        <header>
-            <img src="../assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas, es un vino con una copa llena">
-            <link rel="stylesheet" href="./css/style.css">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./bodegas.html">Bodegas</a></li>
-                    <li><a href="./noticias.html">Noticias</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
-        <main>
-        <section>
-                <h1>Contacto</h1>
-        </section>
-            <section>
-                <p>                  
-                    Envianos tus comentarios o sugerencias
-                </p>
-            </section>
-            <section >
-                <form action="" class="formulario">
-
-                    <div>
-                        <label  for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required>
-                    </div>
-                    <div>
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="Ingrese su correo electrónico" required>
-                    </div>
-                    <div>
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" placeholder="Escriba el asunto de su mensaje" required>
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" cols="20" rows="5" placeholder="Escriba su mensaje aquí" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-enviar">Enviar</button>
-                </form>
-            </section>
-            <main>
-            <footer>
-                <div class="footer-contenido">
-                    <div class="footer-logo">
-                        <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas">
-                    </div>
-                    
-                    <nav class="footer-barra">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./nosotros.html">Nosotros</a></li>
-                            <li><a href="./bodegas.html">Bodegas</a></li>
-                            <li><a href="./noticias.html">Noticias</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
+        <header class="bg-light py-3">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="../assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                            <li class="nav-item"><a href="./bodegas.html" class="nav-link">Bodegas</a></li>
+                            <li class="nav-item"><a href="./noticias.html" class="nav-link">Noticias</a></li>
+                            <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
                         </ul>
                     </nav>
-            
-                    <div class="footer-copyright">
-                        <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
-                        <div class="footer-social">
-                            <a href="https://www.facebook.com/ElCaminoDeLasBodegas/">
-                                <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/elcaminodelasbodegas/">
-                                <i class="fa-brands fa-square-instagram"></i>
-                            </a>
-                            <a href="https://www.twitter.com/elcaminodelasbodegas/">
-                                <i class="fa-brands fa-square-twitter"></i>
-                            </a>
+                </div>
+            </div>
+        </header>    
+    </body>
+        <main>
+        <section class="container my-5">
+            <div class="text-center">
+                <h1 class="mb-4">Contacto</h1>
+                <p>Envíanos tus comentarios o sugerencias. Te responderemos a la brevedad.</p>
+            </div>
+        
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label"><i class="fa-solid fa-user"></i> Nombre</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label"><i class="fa-solid fa-pen"></i> Asunto</label>
+                            <input type="text" id="asunto" class="form-control" placeholder="Escriba el asunto de su mensaje" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label"><i class="fa-solid fa-comment-dots"></i> Mensaje</label>
+                            <textarea id="mensaje" class="form-control" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>        
+        <main>
+                <footer class="bg-dark text-white py-4">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                            <div class="footer-logo">
+                                <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
+                            </div>
+                            <nav>
+                                <ul class="nav">
+                                    <li class="nav-item"><a href="../index.html" class="nav-link text-white">Inicio</a></li>
+                                    <li class="nav-item"><a href="./nosotros.html" class="nav-link text-white">Nosotros</a></li>
+                                    <li class="nav-item"><a href="./bodegas.html" class="nav-link text-white">Bodegas</a></li>
+                                    <li class="nav-item"><a href="./noticias.html" class="nav-link text-white">Noticias</a></li>
+                                    <li class="nav-item"><a href="./contacto.html" class="nav-link text-white">Contacto</a></li>
+                                </ul>
+                            </nav>
+                            <div class="text-center mt-3 mt-md-0">
+                                <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
+                                <div class="footer-social">
+                                    <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white mr-3"><i class="fa-brands fa-facebook-square"></i></a>
+                                    <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white mr-3"><i class="fa-brands fa-instagram-square"></i></a>
+                                    <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white"><i class="fa-brands fa-twitter-square"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            
+                <script src="../js/bootstrap.bundle.min.js"></script> <!-- Archivo local de Bootstrap -->
+            </body>
 </html>

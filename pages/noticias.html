@@ -5,62 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El camino de las bodegas</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/ad5e1ff0aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+<body>
     <body>
-        <header>
-            <img src="../assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas, es un vino con una copa llena">
-            <link rel="stylesheet" href="./css/style.css">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./bodegas.html">Bodegas</a></li>
-                    <li><a href="./noticias.html">Noticias</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
-    <main>
-        <section>
-            <h1>Ultimas Noticias</h1>
-        </section>
-        <section>
-            <p>Aqui encontraras las notas y noticias</p>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-contenido">
-            <div class="footer-logo">
-                <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas">
+        <header class="bg-light py-3">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="../assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                            <li class="nav-item"><a href="./bodegas.html" class="nav-link">Bodegas</a></li>
+                            <li class="nav-item"><a href="./noticias.html" class="nav-link">Noticias</a></li>
+                            <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+        </header>    
+    <main>
+        <section class="container my-5">
+            <h1 class="text-center mb-4">📰 Últimas Noticias</h1>
+                <!-- Buscador -->
+                <div class="mb-4">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Buscar nota...">
+                </div>
             
-            <nav class="footer-barra">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./bodegas.html">Bodegas</a></li>
-                    <li><a href="./noticias.html">Noticias</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-    
-            <div class="footer-copyright">
-                <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/ElCaminoDeLasBodegas/">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/elcaminodelasbodegas/">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <a href="https://www.twitter.com/elcaminodelasbodegas/">
-                        <i class="fa-brands fa-square-twitter"></i>
-                    </a>
+            <div class="row">
+                <!-- Nota 1 -->
+                <div class="col-md-4 nota-item">
+                    <div class="card">
+                        <img src="../assets/img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h5>
+                            <p class="card-text">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
+                            <a href="#" class="btn btn-primary">Leer más...</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Nota 2 -->
+                <div class="col-md-4 nota-item">
+                    <div class="card">
+                        <img src="../assets/img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h5>
+                            <p class="card-text">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
+                            <a href="#" class="btn btn-primary">Leer más...</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Nota 3 -->
+                <div class="col-md-4 nota-item">
+                    <div class="card">
+                        <img src="../assets/img/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Conversamos con Agustina Hanna enologa de Ruca Malen</h5>
+                            <p class="card-text">Agustina Hanna, nueva enóloga de Ruca Malen, quien fue elegida en busca de aportar creatividad e innovación, a partir de toda su expertise en la elaboración de vinos de alta gama.</p>
+                            <a href="#" class="btn btn-primary">Leer más...</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script>
+            // Filtro de búsqueda
+            document.getElementById("searchInput").addEventListener("keyup", function() {
+                let filter = this.value.toLowerCase();
+                let items = document.querySelectorAll(".nota-item");
+        
+                items.forEach(item => {
+                    let title = item.querySelector(".card-title").textContent.toLowerCase();
+                    let summary = item.querySelector(".card-text").textContent.toLowerCase();
+                    if (title.includes(filter) || summary.includes(filter)) {
+                    item.style.display = "block";
+                    } else {
+                    item.style.display = "none";
+                    }
+                });
+            });
+        </script>    
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="footer-logo">
+                    <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="../index.html" class="nav-link text-white">Inicio</a></li>
+                        <li class="nav-item"><a href="./nosotros.html" class="nav-link text-white">Nosotros</a></li>
+                        <li class="nav-item"><a href="./bodegas.html" class="nav-link text-white">Bodegas</a></li>
+                        <li class="nav-item"><a href="./noticias.html" class="nav-link text-white">Noticias</a></li>
+                        <li class="nav-item"><a href="./contacto.html" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="text-center mt-3 mt-md-0">
+                    <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white mr-3"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white mr-3"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script> <!-- Archivo local de Bootstrap -->
+</body>
 </html>

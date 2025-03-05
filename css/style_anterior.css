@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    color: rgb(255, 224, 224);
+    font-family: "Playfair Display", serif;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a1c2a; /* Color vino tinto */
+    padding: 15px 30px;
+}
+
+header img {
+    height: 60px; /* Para ajustar el tamaño del logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #70263b; /* Un tono más oscuro de vino para cuando uno se posiciona */
+    border-radius: 5px;
+}
+body {
+    background-image: url("../assets/img/Fondo.jpg"); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff; /* Asegura que el texto sea legible */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #2e1a1a; /* Color vino tinto */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+}
+
+.footer-barra ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-barra a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #d4af37; /* Color dorado */
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.formulario {
+    color: #2e1a1a;
+    max-width: 500px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.formulario label {
+    color: #2e1a1a;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #fff;
+    color: #2e1a1a; /* Color del texto dentro de los inputs */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Botón del formulario */
+.btn-enviar {
+    background-color: #70263b; /* Botón color vino */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #9b2c4d; /* Color más claro al pasar el mouse */
+}
