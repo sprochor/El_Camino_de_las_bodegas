@@ -1,7 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* HEADER */
+/* Color base para la barra de navegación */
+.custom-navbar {
+    background-color: #6A1B3D; /* Rojo oscuro tipo vino */
+    color: white;
+}
 
+/* Estilo para los enlaces de navegación */
+.custom-navbar .nav-link {
+    color: #F5C6CB; /* Color beige claro para los enlaces */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
 
+/* Cambiar el color del enlace cuando el cursor pasa por encima */
+.custom-navbar .nav-link:hover {
+    color: #F1D0B7; /* Color más claro para resaltar en hover */
+    background-color: #9B2335; /* Rojo vino al pasar el cursor */
+}
 
+/* Estilo para el logo */
+.custom-navbar img {
+    max-height: 50px;
+}
+
+/* Estilo para el botón de la barra de navegación (toggler) */
+.navbar-toggler {
+    border-color: #F5C6CB; /* Beige claro */
+}
+
+/* Estilo para los elementos colapsados en pantallas pequeñas */
+.navbar-collapse {
+    text-align: center;
+}
+
+/* Añadir un borde inferior en la barra de navegación para definirla mejor */
+.custom-navbar {
+    border-bottom: 2px solid #9B2335;
+}
+/*fin de HEADER */
+/* FOOTER */
+/* Estilo personalizado para el footer */
+.custom-footer {
+    background-color: #6A1B3D; /* Rojo vino */
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Estilo para los enlaces del footer */
+.custom-footer .nav-link {
+    color: #F5C6CB; /* Beige claro para los enlaces */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Animación suave al hacer hover */
+}
+
+/* Efecto hover para los enlaces */
+.custom-footer .nav-link:hover {
+    color: #fff; /* Cambia el color a blanco */
+    background-color: #B84D58; /* Cambia el fondo a un tono más oscuro de vino */
+}
+
+/* Estilo para el logo en el footer */
+.custom-footer .footer-logo img {
+    max-height: 50px;
+}
+
+/* Estilo para los íconos sociales */
+.custom-footer .footer-social a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.custom-footer .footer-social a:hover {
+    color: #F5C6CB; /* Cambia el color al hacer hover */
+}
+
+/* Ajustes responsivos: centrar el texto en pantallas pequeñas */
+@media (max-width: 767px) {
+    .custom-footer .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Asegura que las secciones se apilen una debajo de la otra */
+    .custom-footer .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Espacio entre el logo y las demás secciones */
+    .custom-footer .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    /* Asegura que el menú de navegación se vea correctamente */
+    .custom-footer nav {
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para la lista de navegación */
+    .custom-footer .nav {
+        padding-left: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; /* Apilar los items verticalmente */
+    }
+
+    /* Ajustar la apariencia de cada item de la lista */
+    .custom-footer .nav-item {
+        padding: 5px 0;
+    }
+
+    /* Asegura que los íconos sociales se alineen también de manera vertical */
+    .custom-footer .footer-social {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Fin de FOOTER */
+
+/* Buttons */
+/* Estilo personalizado para los botones */
+.btn-vino {
+    background-color: #800000; /* Rojo oscuro (vino) */
+    color: white; /* Texto blanco */
+    border: 2px solid #800000; /* Borde del mismo color */
+    border-radius: 0.25rem; /* Bordes ligeramente redondeados */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-vino:hover {
+    background-color: #7a0000; /* Un tono más oscuro en el hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón en hover */
+}
+
+/* Fin de buttons */
 .card-img-top {
     width: 100%;
     height: 200px;
@@ -15,3 +157,4 @@
     -webkit-line-clamp: 3;                /* Limita el texto a 3 líneas */
     text-overflow: ellipsis;              /* Muestra "..." al final del texto cuando se corta */
 }
+

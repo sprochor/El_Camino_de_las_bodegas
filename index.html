@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="bg-light py-3">
+    <header class="custom-navbar py-3">
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <img src="./assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -40,13 +40,13 @@
         </section>
         <section class="text-center mt-5">
             <p class="lead">El camino de las bodegas es un lugar para amantes del buen vino. En esta página web, podrás encontrar información sobre bodegas, noticias, y contactar con nosotros.</p>
-                <a href="./pages/nosotros.html" class="btn btn-primary">Nosotros</a>.
+                <a href="./pages/nosotros.html" class="btn btn-vino">Nosotros</a>.
         </section>
         <!-- Últimas Bodegas -->
         <section class="mb-5 mt-5">
             <h2 class="text-center mb-4">Últimas Bodegas</h2>
             <div class="row" id="bodegaContainer">
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega1.jpg" class="card-img-top" alt="Bodega 1">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega2.jpg" class="card-img-top" alt="Bodega 2">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega3.jpg" class="card-img-top" alt="Bodega 3">
@@ -86,37 +86,38 @@
         <section class="mb-5">
             <h2 class="text-center mb-4">Últimas Noticias</h2>
             <div class="row">
-            <div class="col-md-4">
+            <!-- Nota 1 -->
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4"">
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia1.jpg" class="card-img-top" alt="Noticia 1">
                     <div class="card-body">
                         <h5 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h5>
                         <p class="card-text news-summary">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
-                        <a href="#" class="btn btn-primary">Leer más...</a>
+                        <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
             </div>
     
             <!-- Nota 2 -->
-            <div class="col-md-4">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4"">
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia2.jpg" class="card-img-top" alt="Noticia 2">
                     <div class="card-body">
                         <h5 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h5>
                         <p class="card-text news-summary">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
-                        <a href="#" class="btn btn-primary">Leer más...</a>
+                        <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
             </div>
     
             <!-- Nota 3 -->
-            <div class="col-md-4">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4"">
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia3.jpg" class="card-img-top" alt="Noticia 3">
                     <div class="card-body">
                         <h5 class="card-title">Conversamos con Agustina Hanna enologa de Ruca Malen</h5>
                         <p class="card-text news-summary">Agustina Hanna, nueva enóloga de Ruca Malen, quien fue elegida en busca de aportar creatividad e innovación, a partir de toda su expertise en la elaboración de vinos de alta gama.</p>
-                        <a href="#" class="btn btn-primary">Leer más...</a>
+                        <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
             </div>
@@ -125,11 +126,11 @@
         <!-- Mensaje de contacto -->
         <section class="text-center mt-5">
             <p class="lead">Todas las bodegas que quieran ser parte de El camino de las Bodegas pueden escribirnos en el siguiente link:</p>
-                <a href="./pages/contacto.html" class="btn btn-primary">contacto</a>.
+                <a href="./pages/contacto.html" class="btn btn-vino">contacto</a>.
         </section>
     </main>
     
-    <footer class="bg-dark text-white py-4">
+    <footer class="custom-footer py-4">
         <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="footer-logo">
@@ -137,21 +138,25 @@
                 </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a href="./index.html" class="nav-link text-white">Inicio</a></li>
-                        <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link text-white">Nosotros</a></li>
-                        <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link text-white">Bodegas</a></li>
-                        <li class="nav-item"><a href="./pages/noticias.html" class="nav-link text-white">Noticias</a></li>
-                        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link text-white">Contacto</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
+                        <li class="nav-item"><a href="./pages/noticias.html" class="nav-link">Noticias</a></li>
+                        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="text-center mt-3 mt-md-0">
                     <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white mr-3"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white mr-3"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white"><i class="fa-brands fa-twitter-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
