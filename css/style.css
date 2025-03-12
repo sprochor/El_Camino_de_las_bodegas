@@ -138,7 +138,8 @@
 }
 
 .btn-vino:hover {
-    background-color: #5a1029; /* Oscurece al pasar el mouse */
+    color: #F1D0B7; /* Color más claro para resaltar en hover */
+    background-color: #9B2335; /* Rojo vino al pasar el cursor */
     transform: scale(1.05);
 }
 
