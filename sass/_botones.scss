@@ -1,0 +1,16 @@
+/* ======== BOTONES ======== */
+.btn-vino {
+    background-color: $ui-color-boton;
+    color: $ui-color-texto-blanco;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        color: $ui-color-texto-claro-hover;
+        background-color: $ui-color-vino-hover;
+        transform: scale(1.05);
+    }
+}

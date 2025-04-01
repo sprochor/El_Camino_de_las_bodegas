@@ -1,0 +1,22 @@
+/* ======== GENERAL ======== */
+body {
+    background-color: $ui-color-fondo; 
+    color: $ui-color-texto-principal; /* Color marrón vino para el texto */
+    font-family: map-get($ui-fuentes, "principal"), serif;
+}
+
+h1 {
+    font-family: map-get($ui-fuentes, "titulo"), cursive;
+    font-size: 3rem;
+    color: $ui-color-boton;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+}
+.lead {
+    @include lead(1.2rem, 400, 1.6);
+  }
+
+

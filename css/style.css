@@ -1,207 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-/* HEADER */
-/* Color base para la barra de navegación */
-.custom-navbar {
-    background-color: #6A1B3D; /* Rojo oscuro tipo vino */
-    color: white;
-}
-
-/* Estilo para los enlaces de navegación */
-.custom-navbar .nav-link {
-    color: #F5C6CB; /* Color beige claro para los enlaces */
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 10px 20px;
-}
-
-/* Cambiar el color del enlace cuando el cursor pasa por encima */
-.custom-navbar .nav-link:hover {
-    color: #F1D0B7; /* Color más claro para resaltar en hover */
-    background-color: #9B2335; /* Rojo vino al pasar el cursor */
-}
-
-/* Estilo para el logo */
-.custom-navbar img {
-    max-height: 50px;
-}
-
-/* Estilo para el botón de la barra de navegación (toggler) */
-.navbar-toggler {
-    border-color: #F5C6CB; /* Beige claro */
-}
-
-/* Estilo para los elementos colapsados en pantallas pequeñas */
-.navbar-collapse {
-    text-align: center;
-}
-
-/* Añadir un borde inferior en la barra de navegación para definirla mejor */
-.custom-navbar {
-    border-bottom: 2px solid #9B2335;
-}
-/*fin de HEADER */
-/* FOOTER */
-/* Estilo personalizado para el footer */
-.custom-footer {
-    background-color: #6A1B3D; /* Rojo vino */
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-/* Estilo para los enlaces del footer */
-.custom-footer .nav-link {
-    color: #F5C6CB; /* Beige claro para los enlaces */
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Animación suave al hacer hover */
-}
-
-/* Efecto hover para los enlaces */
-.custom-footer .nav-link:hover {
-    color: #fff; /* Cambia el color a blanco */
-    background-color: #B84D58; /* Cambia el fondo a un tono más oscuro de vino */
-}
-
-/* Estilo para el logo en el footer */
-.custom-footer .footer-logo img {
-    max-height: 50px;
-}
-
-/* Estilo para los íconos sociales */
-.custom-footer .footer-social a {
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.custom-footer .footer-social a:hover {
-    color: #F5C6CB; /* Cambia el color al hacer hover */
-}
-.footer-social {
-    display: flex;
-    gap: 10px; 
-    justify-content: center; 
-    align-items: center; 
-}
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-
-/* Ajustes responsivos: centrar el texto en pantallas pequeñas */
-@media (max-width: 767px) {
-    .custom-footer .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Asegura que las secciones se apilen una debajo de la otra */
-    .custom-footer .d-flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* Espacio entre el logo y las demás secciones */
-    .custom-footer .footer-logo {
-        margin-bottom: 20px;
-    }
-
-    /* Asegura que el menú de navegación se vea correctamente */
-    .custom-footer nav {
-        margin-bottom: 20px;
-    }
-
-    /* Estilo para la lista de navegación */
-    .custom-footer .nav {
-        padding-left: 0;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column; /* Apilar los items verticalmente */
-    }
-
-    /* Ajustar la apariencia de cada item de la lista */
-    .custom-footer .nav-item {
-        padding: 5px 0;
-    }
-
-    /* Asegura que los íconos sociales se alineen también de manera vertical */
-    .custom-footer .footer-social {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/* Fin de FOOTER */
-
-/* Buttons */
-/* Estilo personalizado para los botones */
-.btn-vino {
-    background-color: #7d1538; /* Color vino */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn-vino:hover {
-    color: #F1D0B7; /* Color más claro para resaltar en hover */
-    background-color: #9B2335; /* Rojo vino al pasar el cursor */
-    transform: scale(1.05);
-}
-
-/* Fin de buttons */
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; 
-}
-
-.news-summary {
-    display: -webkit-box;                 /* Permite que el contenido se ajuste a un contenedor flexible */
-    -webkit-box-orient: vertical;         /* Establece la orientación del contenedor (vertical en este caso) */
-    overflow: hidden;                     /* Oculta el contenido que desborda el contenedor */
-    -webkit-line-clamp: 3;                /* Limita el texto a 3 líneas */
-    text-overflow: ellipsis;              /* Muestra "..." al final del texto cuando se corta */
-}
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* ======== GENERAL ======== */
 body {
-    background-color: #f8f1e5; /* Fondo suave estilo pergamino */
-    color: #4a2c2a; /* Color marrón vino para el texto */
-    font-family: "Playfair Display", serif;
+  background-color: #f8f1e5;
+  color: #4a2c2a; /* Color marrón vino para el texto */
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
-    font-family: "Pacifico", cursive;
-    font-size: 3rem;
-    color: #7d1538; /* Color vino */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #7d1538;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+  font-size: 1.5rem;
 }
 
 .lead {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
+
+/* ======== HEADER ======== */
+.custom-navbar {
+  background-color: #6A1B3D;
+  color: #fff;
+  border-bottom: 2px solid #9B2335;
+}
+.custom-navbar .nav-link {
+  color: #F5C6CB;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.custom-navbar .nav-link:hover {
+  color: #F1D0B7;
+  background-color: #9B2335;
+}
+.custom-navbar img {
+  max-height: 50px;
+}
+
+.navbar-toggler {
+  border-color: #F5C6CB;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+/* ======== FOOTER ======== */
+.custom-footer {
+  background-color: #6A1B3D;
+  color: #F5C6CB;
+  padding: 30px 0;
+}
+.custom-footer .nav-link {
+  color: #F5C6CB;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.custom-footer .nav-link:hover {
+  color: #F5C6CB;
+  background-color: #B84D58;
+}
+.custom-footer .footer-logo img {
+  max-height: 50px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social a {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.footer-social a:hover {
+  color: #F5C6CB;
+}
+
+/* ======== BOTÓN WHATSAPP ======== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ======== BOTONES ======== */
+.btn-vino {
+  background-color: #7d1538;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-vino:hover {
+  color: #F1D0B7;
+  background-color: #9B2335;
+  transform: scale(1.05);
+}
+
+/* ======== CARDS Y NOTICIAS ======== */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-summary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+.bodega-item {
+  position: relative;
+  overflow: hidden;
+}
+.bodega-item .card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bodega-item .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.bodega-item .card img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  display: block;
+}
+.bodega-item .card:hover img {
+  filter: brightness(0.4);
+}
+
+/* Estilos para el overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.bodega-item .card:hover .overlay {
+  opacity: 1;
+}
+
+/* ======== CARRUSEL ======== */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    max-width: 90%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .carousel-caption h2 {
+    font-size: 1.4rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */

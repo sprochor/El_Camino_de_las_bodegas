@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El camino de las bodegas</title>
+    <meta name="description" content="Descubre las mejores bodegas y vinos en El Camino de las Bodegas. Noticias, información y contacto para amantes del vino.">
+    <meta name="keywords" content="vino, bodegas, enología, degustación, viñedos, noticias del vino">
+    <title>El Camino de las Bodegas</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ad5e1ff0aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Encabezado con logo y menú de navegación -->
     <header class="custom-navbar py-3">
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
@@ -33,7 +36,7 @@
             </div>
         </div>
     </header>
-    
+    <!-- Contenido principal -->    
     <main class="container py-5">
         <section>
             <h1 class="text-center mb-4">Bienvenido a El Camino de las Bodegas</h1>
@@ -47,43 +50,46 @@
         <section class="mb-5 mt-5">
             <h2 class="text-center mb-4">Últimas Bodegas</h2>
             <div class="row" id="bodegaContainer">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 bodega-item">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega1.jpg" class="card-img-top" alt="Bodega 1">
+                            <div class="overlay">Descubre esta bodega 🍷</div>
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Trapiche Costa & Pampa</h5>
-                            <h7>Chapadmalal - Buenos Aires</h7>
+                            <h3 class="card-title">Trapiche Costa & Pampa</h3>
+                            <p class="card-text">Chapadmalal - Buenos Aires</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 bodega-item">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega2.jpg" class="card-img-top" alt="Bodega 2">
+                            <div class="overlay">Descubre esta bodega 🍷</div>
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Bodega Lopez</h5>
-                            <h7>Maipu - Mendoza</h7>
+                            <h3 class="card-title">Bodega López</h3>
+                            <p class="card-text">Maipú - Mendoza</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 bodega-item">
                     <div class="card">
                         <a href="#">
                             <img src="./assets/img/Bodega3.jpg" class="card-img-top" alt="Bodega 3">
+                            <div class="overlay">Descubre esta bodega 🍷</div>
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title">Jean Bousquet</h5>
-                            <h7>Valle de Uco - Mendoza</h7>
+                            <h3 class="card-title">Jean Bousquet</h3>
+                            <p class="card-text">Valle de Uco - Mendoza</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Últimas Noticias -->
+        <!-- Sección Últimas Noticias -->
         <section class="mb-5">
             <h2 class="text-center mb-4">Últimas Noticias</h2>
             <div class="row">
@@ -92,8 +98,8 @@
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia1.jpg" class="card-img-top" alt="Noticia 1">
                     <div class="card-body">
-                        <h5 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h5>
-                        <p class="card-text news-summary">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
+                        <h3 class="card-title">Entrevista a Juan Pablo Díaz</h3>
+                        <p class="card-text">Descubre la historia y visión del enólogo de Bodegas López y mucho.</p>
                         <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
@@ -104,8 +110,8 @@
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia2.jpg" class="card-img-top" alt="Noticia 2">
                     <div class="card-body">
-                        <h5 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h5>
-                        <p class="card-text news-summary">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
+                        <h3 class="card-title">Nueva Línea Patrimonial</h3>
+                        <p class="card-text">Nieto Senetiner lanza una línea en homenaje a los varietales históricos.</p>
                         <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
@@ -116,8 +122,8 @@
                 <div class="card h-100 d-flex flex-column">
                     <img src="./assets/img/Noticia3.jpg" class="card-img-top" alt="Noticia 3">
                     <div class="card-body">
-                        <h5 class="card-title">Conversamos con Agustina Hanna enologa de Ruca Malen</h5>
-                        <p class="card-text news-summary">Agustina Hanna, nueva enóloga de Ruca Malen, quien fue elegida en busca de aportar creatividad e innovación, a partir de toda su expertise en la elaboración de vinos de alta gama.</p>
+                        <h3 class="card-title">Innovación en Ruca Malen</h3>
+                        <p class="card-text">Agustina Hanna aporta creatividad e innovación a la bodega Ruca Malen.</p>
                         <a href="#" class="btn btn-vino">Leer más...</a>
                     </div>
                 </div>
@@ -130,7 +136,7 @@
                 <a href="./pages/contacto.html" class="btn btn-vino">contacto</a>.
         </section>
     </main>
-    
+     <!-- Pie de página -->   
     <footer class="custom-footer py-4">
         <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">

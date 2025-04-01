@@ -1,0 +1,5 @@
+@mixin lead($tamano-rem, $grosor, $espacio-ver) {
+  font-size: $tamano-rem;   // Tamaño de fuente (en rem)
+  font-weight: $grosor;     // Grosor de la fuente 
+  line-height: $espacio-ver; // Espacio entre líneas 
+}
