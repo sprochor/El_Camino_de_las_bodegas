@@ -52,9 +52,9 @@
                     <div class="card">
                         <img src="../assets/img/Noticia1.jpg" class="card-img-top" alt="Noticia 1">
                         <div class="card-body">
-                            <h3 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h3>
-                            <p class="card-text news-summary">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
-                            <a href="#" class="btn btn-vino">Leer más...</a>
+                            <h3 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h3>
+                            <p class="card-text news-summary">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
+                            <a href="./Noticias/noticia_Nueva_Linea_Nieto.html" class="btn btn-vino">Leer más...</a>
                         </div>
                     </div>
                 </div>
@@ -64,9 +64,9 @@
                     <div class="card">
                         <img src="../assets/img/Noticia2.jpg" class="card-img-top" alt="Noticia 2">
                         <div class="card-body">
-                            <h3 class="card-title">Nueva Linea de Bodega Nieto Senetiner: Patrimonial</h3>
-                            <p class="card-text news-summary">Nieto Senetiner presenta su nueva línea PATRIMONIAL como un homenaje a  los varietales históricos que dieron origen a la vitivinicultura en Mendoza.</p>
-                            <a href="#" class="btn btn-vino">Leer más...</a>
+                            <h3 class="card-title">Entrevista a Juan Pablo Diaz, enólogo de Bodegas Lopez</h3>
+                            <p class="card-text news-summary">Entrevistamos a Juan Pablo Diaz, enólogo de Bodegas López, quien nos conto un poco sobre su historia con el vino y su profesión, se las compartimos esperando la disfruten tanto como nosotros disfrutamos esta amena charla.</p>
+                            <a href="./Noticias/noticia_Entrevista_Juan_Pablo_Diaz.html" class="btn btn-vino">Leer más...</a>
                         </div>
                     </div>
                 </div>
@@ -78,28 +78,11 @@
                         <div class="card-body">
                             <h3 class="card-title">Conversamos con Agustina Hanna enologa de Ruca Malen</h3>
                             <p class="card-text news-summary">Agustina Hanna, nueva enóloga de Ruca Malen, quien fue elegida en busca de aportar creatividad e innovación, a partir de toda su expertise en la elaboración de vinos de alta gama.</p>
-                            <a href="#" class="btn btn-vino">Leer más...</a>
+                            <a href="./Noticias/noticia_Entrevisa_Agustina_Hanna.html" class="btn btn-vino">Leer más...</a>
                         </div>
                     </div>
                 </div>
         </section>
-        <script>
-            // Filtro de búsqueda
-            document.getElementById("searchInput").addEventListener("keyup", function() {
-                let filter = this.value.toLowerCase();
-                let items = document.querySelectorAll(".nota-item");
-        
-                items.forEach(item => {
-                    let title = item.querySelector(".card-title").textContent.toLowerCase();
-                    let summary = item.querySelector(".card-text").textContent.toLowerCase();
-                    if (title.includes(filter) || summary.includes(filter)) {
-                    item.style.display = "block";
-                    } else {
-                    item.style.display = "none";
-                    }
-                });
-            });
-        </script>    
     </main>
     <footer class="custom-footer py-4">
         <div class="container-fluid">
@@ -136,6 +119,23 @@
     <a href="https://wa.me/5491160126040" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+    <script>
+        // Filtro de búsqueda
+        document.getElementById("searchInput").addEventListener("keyup", function() {
+            let filter = this.value.toLowerCase();
+            let items = document.querySelectorAll(".nota-item");
+    
+            items.forEach(item => {
+                let title = item.querySelector(".card-title").textContent.toLowerCase();
+                let summary = item.querySelector(".card-text").textContent.toLowerCase();
+                if (title.includes(filter) || summary.includes(filter)) {
+                item.style.display = "block";
+                } else {
+                item.style.display = "none";
+                }
+            });
+        });
+    </script>    
     <script src="../js/bootstrap.bundle.min.js"></script> <!-- Archivo local de Bootstrap -->
 </body>
 </html>
