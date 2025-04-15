@@ -12,23 +12,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Verificación de Edad -->
+<div id="age-verification" class="modal d-block" tabindex="-1" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <h5 class="modal-title mb-3">¿Sos mayor de 18 años?</h5>
+        <p>Este sitio es solo para mayores de edad. Por favor, confirmá tu edad para continuar.</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button id="yes-btn" class="btn-vino">Sí</button>
+            <button id="no-btn" class="btn-vino">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Encabezado con logo y menú de navegación -->
     <header class="custom-navbar py-3">
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
-                <img src="./assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
+                <img src="./assets/img/Logo Bodegas.png" 
+                alt="Logo El camino de las bodegas" 
+                class="img-fluid logo" 
+                style="max-height: 50px;">           
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="nav">
-                                <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
-                                <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
-                                <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
-                                <li class="nav-item"><a href="./pages/noticias.html" class="nav-link">Noticias</a></li>
-                                <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link px-3" href="./index.html" class="nav-link">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="./pages/noticias.html" class="nav-link">Noticias</a></li>
+                                <li class="nav-item"><a class="nav-link px-3" href="./pages/contacto.html" class="nav-link">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,12 +55,12 @@
     <!-- Contenido principal -->    
     <main class="container py-5">
         <section>
-            <h1 class="text-center mb-4">Bienvenido a El Camino de las Bodegas</h1>
+            <h1 class="text-center mb-4">El Camino de las Bodegas</h1>
         </section>
         <section class="text-center mt-5">
-            <p class="lead">El Camino de las Bodegas es un lugar para amantes del buen vino.</p>
-            <p class="lead"> En esta página web, podrás encontrar información sobre bodegas, noticias y contactar con nosotros.</p>
-            <a href="./pages/nosotros.html" class="btn btn-vino">Nosotros</a>
+            <p class="lead">Un lugar para amantes del buen vino.</p>
+            <p class="lead"> Encontra información sobre bodegas, noticias y contactate con nosotros.</p>
+            <a href="./pages/contacto.html" class="btn btn-vino">contacto</a>
         </section>
         <!-- Últimas Bodegas -->
         <section class="mb-5 mt-5">
@@ -130,49 +146,89 @@
             </div>
         </section>
         
-        <!-- Mensaje de contacto -->
-        <section class="text-center mt-5">
-            <p class="lead">Todas las bodegas que quieran ser parte de El camino de las Bodegas pueden escribirnos en el siguiente link:</p>
-                <a href="./pages/contacto.html" class="btn btn-vino">contacto</a>.
-        </section>
+        <!-- mensaje de nosotros -->
+        <section class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0">
+                <img src="./assets/img/Carla_copa.png"  alt="Nosotros brindando" class="img-fluid rounded shadow img-glow">
+              </div>
+              <div class="col-md-6">
+                <h2 class="mb-3">¿Quiénes somos?</h2>
+                <p class="lead">
+                  Somos personas que amamos el vino y los momentos que nacen alrededor de una copa.  
+                  <strong>El Camino de las Bodegas</strong> es también nuestro propio camino, el que recorremos con cada visita, cada historia y cada brindis compartido.
+                </p>
+                <p class="text-muted">
+                  Gracias por ser parte de este viaje. Te invitamos a seguir descubriendo con nosotros.
+                </p>
+                <a href="./pages/nosotros.html" class="btn btn-vino">nosotros</a>
+              </div>
+            </div>
+          </section>
     </main>
-     <!-- Pie de página -->   
+     <!-- Footer -->   
     <footer class="custom-footer py-4">
-        <div class="container-fluid">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="footer-logo">
-                    <img src="./assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
-                </div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
-                        <li class="nav-item"><a href="./pages/noticias.html" class="nav-link">Noticias</a></li>
-                        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="text-center mt-3 mt-md-0">
-                    <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white mr-3" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-facebook-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white mr-3" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-instagram-square"></i>
-                        </a>
-                        <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-twitter-square"></i>
-                        </a>
-                    </div>
-                </div>
+        <!-- Logo -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="footer-logo">
+                <img src="./assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
+            </div>
+        </div>
+        <!-- Navegación -->
+            <nav>
+                <ul class="nav justify-content-center flex-column flex-md-row text-center">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="./pages/bodegas.html" class="nav-link">Bodegas</a></li>
+                    <li class="nav-item"><a href="./pages/noticias.html" class="nav-link">Noticias</a></li>
+                    <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+          <!-- Redes sociales -->
+          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-2">
+            <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-square fa-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram-square fa-3x"></i>
+            </a>
+            <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter-square fa-3x"></i>
+            </a>
+        </div>
+      <!-- Copyright -->
+            <div class="text-center mt-3 mt-md-0 footer-social">
+                <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p> 
             </div>
         </div>
     </footer>
     <a href="https://wa.me/5491160126040" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const modal = document.getElementById("age-verification");
+          const yesBtn = document.getElementById("yes-btn");
+          const noBtn = document.getElementById("no-btn");
+      
+          if (!localStorage.getItem("ageVerified")) {
+            modal.style.display = "block";
+          } else {
+            modal.remove();
+          }
+      
+          yesBtn.addEventListener("click", function () {
+            localStorage.setItem("ageVerified", "true");
+            modal.remove();
+          });
+      
+          noBtn.addEventListener("click", function () {
+            alert("Debés ser mayor de 18 años para ingresar.");
+            window.location.href = "https://www.google.com"; 
+          });
+        });
+      </script>
 </body>
 </html>
 

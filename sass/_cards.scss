@@ -37,3 +37,11 @@
         }
     }
 }
+.img-glow {
+    opacity: 0.8; /* Reduce ligeramente la opacidad por defecto */
+    transition: opacity 0.3s ease-in-out; /* Agrega una transición suave para la opacidad */
+}
+
+.img-glow:hover {
+    opacity: 1; /* Restaura la opacidad al pasar el cursor */
+}

@@ -17,19 +17,22 @@
     <header class="custom-navbar py-3">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center">
-                    <img src="../assets/img/Logo Bodegas.png" alt="Logo El camino de las bodegas" class="img-fluid" style="max-height: 50px;">
+                    <img src="../assets/img/Logo Bodegas.png" 
+                    alt="Logo El camino de las bodegas" 
+                    class="img-fluid logo" 
+                    style="max-height: 50px;">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="nav">
-                                    <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                                    <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
-                                    <li class="nav-item"><a href="./bodegas.html" class="nav-link">Bodegas</a></li>
-                                    <li class="nav-item"><a href="./noticias.html" class="nav-link">Noticias</a></li>
-                                    <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link px-3" href="../index.html" class="nav-link">Inicio</a></li>
+                                    <li class="nav-item"><a class="nav-link px-3" href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                                    <li class="nav-item"><a class="nav-link px-3" href="./bodegas.html" class="nav-link">Bodegas</a></li>
+                                    <li class="nav-item"><a class="nav-link px-3" href="./noticias.html" class="nav-link">Noticias</a></li>
+                                    <li class="nav-item"><a class="nav-link px-3" href="./contacto.html" class="nav-link">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -42,10 +45,10 @@
             <section>
                 <h1 class="text-center mb-4">Acerca de nosotros</h1>
             </section>
-            <section class="text-center mb-5">
-                <p>El Camino de las Bodegas es un espacio para descubrir y disfrutar del mundo del vino.</p>
-                <p>Este proyecto está abierto a todas las bodegas del mundo que deseen formar parte de una comunidad apasionada por el vino. </p>
-                <p>Nuestro propósito es difundir, promover y apoyar el crecimiento del universo vinícola, ofreciendo información y experiencias inolvidables a los amantes del vino.</p>
+            <section class="justify-content-center mb-5">
+                <p class="lead">El Camino de las Bodegas es un espacio creado para descubrir, compartir y disfrutar el fascinante universo del vino.</p>
+                <p class="lead">Invitamos a todas las bodegas del mundo a sumarse a esta comunidad apasionada, donde cada etiqueta cuenta una historia y cada copa es una experiencia. </p>
+                <p class="lead">Nuestro propósito es impulsar y difundir la cultura del vino, brindando información, inspiración y vivencias memorables para quienes aman este arte.</p>
             </section>
             <section class="text-center">
                 <h2 class="text-center mb-4">🍷 Cómo degustar un buen vino como un verdadero amante del vino 🍷</h2>
@@ -100,7 +103,7 @@
                             <div class="slide-container text-center">
                                 <img src="../assets/img/Paso_5.png" class="img-fluid w-100 mb-1" style="max-width: 600px;" alt="Amantes del vino">
                                 <div class="carousel-caption d-md-block">
-                                    <h2>5️⃣ Siente el retrogusto 😌</h2>
+                                    <h2>5️⃣ Siente el sabor 😌</h2>
                                     <p>Disfruta los sabores que permanecen en tu boca.</p>
                                 </div>
                             </div>
@@ -129,35 +132,39 @@
             </section>
     </main>
     
-    <footer class="custom-footer py-4">
-        <div class="container-fluid">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="footer-logo">
-                    <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
-                </div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="./bodegas.html" class="nav-link">Bodegas</a></li>
-                        <li class="nav-item"><a href="./noticias.html" class="nav-link">Noticias</a></li>
-                        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
-                <div class="text-center mt-3 mt-md-0">
-                    <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white mr-3" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-facebook-square"></i>
-                        </a>
-                        <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white mr-3" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-instagram-square"></i>
-                        </a>
-                        <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-twitter-square"></i>
-                        </a>
-                    </div>
-                </div>
+     <!-- Footer -->   
+     <footer class="custom-footer py-4">
+        <!-- Logo -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="footer-logo">
+                <img src="../assets/img/Logo Bodegas.png" alt="Logo El Camino de las Bodegas" class="img-fluid" style="max-height: 50px;">
+            </div>
+        </div>
+        <!-- Navegación -->
+            <nav>
+                <ul class="nav justify-content-center flex-column flex-md-row text-center">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="./bodegas.html" class="nav-link">Bodegas</a></li>
+                    <li class="nav-item"><a href="./noticias.html" class="nav-link">Noticias</a></li>
+                    <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+          <!-- Redes sociales -->
+          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-2">
+            <a href="https://www.facebook.com/ElCaminoDeLasBodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-square fa-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram-square fa-3x"></i>
+            </a>
+            <a href="https://www.twitter.com/elcaminodelasbodegas/" class="text-white" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter-square fa-3x"></i>
+            </a>
+        </div>
+      <!-- Copyright -->
+            <div class="text-center mt-3 mt-md-0 footer-social">
+                <p>&copy; 2025 El Camino de las Bodegas. Todos los derechos reservados.</p> 
             </div>
         </div>
     </footer>
